@@ -1,14 +1,15 @@
 body
 {
 width: 1000px;
-background-image: "toro.PNG";
+background-image: url("toro.PNG");
   background-width: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 background-color: #E9CF89;
 color: #244740:
 }
 
 h1
 {
-  font-family: Bookman:
+  font-family: Bookman;
 }
