@@ -10,9 +10,33 @@ var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
                 {
             setBanner("The Vehicles of Ghibli");
             console.log("Vehicles", vehicles);
-            make VehicleBar(vehicles);
+            makeVehicleBar(vehicles);
                 }
             function(err)
                 {setBanner("No Transportation Today");
                 })
+ 
+var makeVehicleBar=function(vehicles)
+              {
+                d3.select("#fan_art")
+                  .selectAll("img")
+                  .data(vehicles)
+                  .enter()
+                  .attr("src", function(vehicle)
+                        {
+                         return vehicle.img;
+                          }
+                  .on ("click", function(d)
+                        {
+                         displayInfo(d);
+                })
+                        
+var displayInfo = function(vehicle)
+                {
+                  clearInfo()
+                }
+                
+                
+                      
+  
             
