@@ -4,7 +4,7 @@ var setBanner = function(message)
                 .text("The Vehicles of Ghibli");
              }
              
-var vehiclesPromise = d3.json("vehicles.json")
+var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
             vehiclesPromise.then(
             function(vehicles)
                 {
