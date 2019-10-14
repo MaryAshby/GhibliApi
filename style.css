@@ -2,8 +2,8 @@ body
 {
 width: 1000px;
 background-image: url("toro.PNG");
-  background-width: 200px;
-  background-position: left top;
+  background-size: 150px;
+  background-position: right top;
   background-repeat: no-repeat;
 background-color: #E9CF89;
 color: #244740:
