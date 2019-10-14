@@ -10,9 +10,9 @@ var makeVehicleBar=function(vehicles)
                   .selectAll("img")
                   .data(vehicles)
                   .enter()
-                  .attr("src", function(vehicle)
+                  .attr("src", function(vehicles)
                         {
-                         return vehicle.img;
+                         return vehicles.img;
                           }
                   .on ("click", function(d)
                         {
