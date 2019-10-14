@@ -4,11 +4,6 @@ var setBanner = function(message)
                 .text("The Vehicles of Ghibli");
              }
 
-var displayInfo = function(vehicle)
-                {
-                  clearInfo()
-                }
-
 var makeVehicleBar=function(vehicles)
               {
                 d3.select("#fan_art")
