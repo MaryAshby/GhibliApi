@@ -6,12 +6,9 @@ var setBanner = function(message)
 
 var info = box.append("div")
               .attr("class","info);
-           info.append("div".text("name:" + name)
-           info.append("div".text("description:" + description)
-           info.append("div".text("vehicle class:" + vehicle_class)   
-           info.append("div".text("lenght:" + length)
-           info.append("div".text("pilot:" + pilot)
-           info.append("div".text("films:" + films)
+     
+           info.append("div".text("pilot:" + "https://ghibliapi.herokuapp.com/people/6523068d-f5a9-4150-bf5b-76abe6fb42c3"))
+           
                 
 var makeVehicleBar=function(vehicles)
               {
