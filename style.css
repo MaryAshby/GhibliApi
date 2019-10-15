@@ -16,3 +16,10 @@ h1
   font-family: Bookman;
   text-align: center;
 }
+
+img
+{
+  padding: 15px;
+  border: 5px;
+  border-color: #C25924;
+}
