@@ -26,7 +26,7 @@ var makeVehicleBar=function(vehicles)
                       info(d);
                 })
              
-var vehiclesPromise = ("https://ghibliapi.herokuapp.com/vehicles")
+var vehiclesPromise = d3.request("https://ghibliapi.herokuapp.com/vehicles")
             vehiclesPromise.then(
             function(vehicles)
                 {
