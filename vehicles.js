@@ -1,6 +1,6 @@
 var setBanner = function(message)
              {
-             d3.select(#banner)
+             d3.select("#banner")
                 .text("The Vehicles of Ghibli");
              }
 
@@ -17,7 +17,7 @@ var makeVehicleBar=function(vehicles)
                   .on ("click", function(d)
                         {
                          displayInfo(d);
-                })
+                }))
              
 var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
             vehiclesPromise.then(
