@@ -22,7 +22,7 @@ var makeVehicleBar=function(vehicles)
                           }
                   .on ("click", function(d)
                         {
-                      Info(d);
+                      info(d);
                 }))
              
 var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
@@ -33,9 +33,6 @@ var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
             console.log("Vehicles", vehicles);
             makeVehicleBar(vehicles);
                 }
-            function(err)
-                {setBanner("No Transportation Today");
-                })
  
 
                 
