@@ -21,14 +21,10 @@ var makeVehicleBar=function(vehicles)
                   .selectAll("img")
                   .data(vehicles)
                   .enter()
-                  .attr("src", function(vehicles)
-                        {
-                         return vehicles.img;
-                          }
                   .on ("click", function(d)
                         {
                       info(d);
-                }))
+                })
              
 var vehiclesPromise = ("https://ghibliapi.herokuapp.com/vehicles")
             vehiclesPromise.then(
@@ -37,7 +33,7 @@ var vehiclesPromise = ("https://ghibliapi.herokuapp.com/vehicles")
             setBanner("The Vehicles of Ghibli");
             console.log("Vehicles", vehicles);
             makeVehicleBar(vehicles);
-                }
+                })
  
 
                 
