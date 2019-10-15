@@ -4,6 +4,15 @@ var setBanner = function(message)
                 .text("The Vehicles of Ghibli");
              }
 
+var info = box.append("div")
+              .attr("class","info);
+           info.append("div".text("name:" + name)
+           info.append("div".text("description:" + description)
+           info.append("div".text("vehicle class:" + vehicle_class)   
+           info.append("div".text("lenght:" + length)
+           info.append("div".text("pilot:" + pilot)
+           info.append("div".text("films:" + films)
+                
 var makeVehicleBar=function(vehicles)
               {
                 d3.select("#fan_art")
@@ -16,7 +25,7 @@ var makeVehicleBar=function(vehicles)
                           }
                   .on ("click", function(d)
                         {
-                         displayInfo(d);
+                      Info(d);
                 }))
              
 var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
@@ -31,15 +40,7 @@ var vehiclesPromise = d3.json("https://ghibliapi.herokuapp.com/vehicles")
                 {setBanner("No Transportation Today");
                 })
  
-var info = box.append("div")
-              .attr("class","info);
-           info.append("div".text("name:" + name)
-           info.append("div".text("description:" + description)
-           info.append("div".text("vehicle class:" + vehicle_class)   
-           info.append("div".text("lenght:" + length)
-           info.append("div".text("pilot:" + pilot)
-           info.append("div".text("films:" + films)
-                
+
                 
                       
   
